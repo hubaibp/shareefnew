@@ -421,6 +421,9 @@ h2{
 .sci {
   font-size: 38px;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center; 
 }
 
 /* Title */
