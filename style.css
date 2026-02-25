@@ -218,3 +218,249 @@ h2{
   transform: translateY(-5px) scale(1.1);
   box-shadow: 0 8px 18px rgba(250,204,21,0.4);
 }
+
+
+/* ===== ABOUT SECTION ===== */
+
+#about {
+  padding: 100px 20px;
+  background: #f8fafc;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* SMALL LABEL */
+.eyl {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c59d2a;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* TITLE */
+.stitle {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.stitle em {
+  color: #c59d2a;
+  font-style: normal;
+}
+
+/* PARAGRAPH */
+.ap {
+  color: #6b7280;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* FEATURES */
+.afeats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.af {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.afi {
+  font-size: 24px;
+}
+
+.aft {
+  font-weight: 600;
+  margin-bottom: 5px;
+  /* font-family: 'Playfair Display', serif; */
+  text-align: center;
+  align-items: center;
+}
+
+.afs {
+  font-size: 14px;
+  color: #6b7280;
+  font-family: Arial, sans-serif;
+}
+
+/* MARKETS */
+.mkts {
+  margin-top: 40px;
+}
+
+.mp {
+  display: inline-block;
+  background: #e5e7eb;
+  padding: 8px 15px;
+  border-radius: 30px;
+  font-size: 14px;
+  margin: 5px;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+  .stitle {
+    font-size: 32px;
+  }
+
+  .afeats {
+    grid-template-columns: 1fr;
+  }
+
+  #about {
+    padding: 70px 20px;
+  }
+
+}
+
+
+
+
+
+
+/* ===== SERVICES SECTION ===== */
+
+#services {
+  padding: 100px 20px;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.shd {
+  max-width: 800px;
+  margin: 0 auto 70px;
+}
+
+.eyc {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c59d2a;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.stitle {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  color: #111827;
+}
+
+.stitle em {
+  color: #c59d2a;
+  font-style: normal;
+}
+
+.ssub {
+  font-size: 17px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* ===== GRID ===== */
+
+.sgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ===== CARD ===== */
+
+.sc {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+.sc:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* Number */
+.scn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 70px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.05);
+}
+
+/* Icon */
+.sci {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+/* Title */
+.scname {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+/* Description */
+.scdesc {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Link */
+.sclink {
+  font-size: 14px;
+  font-weight: 600;
+  color: #c59d2a;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sclink:hover {
+  letter-spacing: 1px;
+}
+
+/* ===== REVEAL ANIMATION ===== */
+
+.rv {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.rv.active {
+  opacity: 1;
+  transform: translateY(0);
+}
