@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en" class="transition duration-500">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanha Enterprises | Driving Global Market Expansion</title>
+<link rel="stylesheet" href="swipe.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="comin.css">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        primary: "#002147",
+        accent: "#9ACD32"
+      }
+    }
+  }
+}
+</script>
+
+
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-white transition duration-500">
+
+<!-- PRELOADER -->
+<div id="preloader" class="fixed inset-0 bg-white flex flex-col justify-center items-center z-50">
+  <div id="lottieLoader" style="width:350px;height:350px;"></div>
+  <!-- <p class="text-white mt-6 tracking-widest">Connecting Global Markets...</p> -->
+</div>
+
+<!-- NAVBAR -->
+<header id="navbar" class="fixed w-full z-40 bg-primary text-white transition-all duration-300">
+  <div class="container mx-auto flex justify-between items-center px-6 py-5">
+
+    <h1 class="text-2xl font-bold text-accent">Sanha Enterprises</h1>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-8 font-medium items-center">
+      <a href="#about" class="hover:text-accent transition">About</a>
+      <a href="#services" class="hover:text-accent transition">Services</a>
+      <a href="#products" class="hover:text-accent transition">Products</a>
+      <a href="#testimonials" class="hover:text-accent transition">Testimonials</a>
+      <a href="#contact" class="hover:text-accent transition">Contact</a>
+
+      <!-- Dark Toggle Desktop -->
+      <button id="darkToggle" class="ml-6 text-xl">🌙</button>
+    </nav>
+
+    <!-- Right Controls -->
+    <div class="flex items-center space-x-4 md:hidden">
+
+      <!-- Dark Toggle Mobile -->
+      <button id="darkToggleMobile" class="text-xl">🌙</button>
+
+      <!-- Hamburger -->
+      <div id="menuBtn" class="cursor-pointer hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-primary px-6 pb-6 space-y-4">
+    <a href="#about" class="block">About</a>
+    <a href="#services" class="block">Services</a>
+    <a href="#products" class="block">Products</a>
+    <a href="#testimonials" class="block">Testimonials</a>
+    <a href="#contact" class="block">Contact</a>
+  </div>
+</header>
+
+<!-- HERO 
+<section class="h-screen flex items-center justify-center bg-cover bg-center text-white relative"
+style="background-image: url('ghjk.png');">
+<div class="absolute inset-0 bg-primary bg-opacity-45"></div>
+<div class="relative text-center px-6 reveal">
+<h2 class="text-4xl md:text-6xl font-extrabold mb-6">Driving Global Market Expansion</h2>
+<p class="text-lg md:text-xl mb-8">Innovative Connections: Indian Products to GCC Consumers</p>
+<a href="#services" class="bg-accent text-primary font-semibold px-8 py-3 rounded-full hover:bg-white transition">Explore Our Services</a>
+</div>
+</section>  -->
+<section class="h-screen flex items-center justify-center bg-cover bg-center text-white relative"
+style="background-image: url('ghjk.png');">
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-primary bg-opacity-45"></div>
+
+  <!-- Hero Content -->
+  <div class="relative text-center px-6 reveal z-10">
+    <h2 class="text-4xl md:text-6xl font-extrabold mb-6">
+      Driving Global Market Expansion
+    </h2>
+    <p class="text-lg md:text-xl mb-8">
+      Innovative Connections: Indian Products to GCC Consumers
+    </p>
+    <a href="#services"
+       class="bg-accent text-primary font-semibold px-8 py-3 rounded-full hover:bg-white transition">
+       Explore Our Services
+    </a>
+  </div>
+
+  <!-- Counter (Lower Middle) -->
+  <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 w-full px-6 z-20">
+    <div class="hstats max-w-4xl mx-auto    py-6 px-8
+                grid grid-cols-3 gap-6 text-center ">
+
+      <!-- Stat 1 -->
+      <div>
+        <div class="snum text-3xl md:text-4xl font-bold
+                    bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-200
+                    bg-clip-text text-transparent"
+             data-target="50">
+          0+
+        </div>
+        <div class="text-sm md:text-base text-gray-200 mt-1">
+          GCC Partners
+        </div>
+      </div>
+
+      <!-- Stat 2 -->
+      <div>
+        <div class="snum text-3xl md:text-4xl font-bold
+                    bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-200
+                    bg-clip-text text-transparent"
+             data-target="12">
+          0+
+        </div>
+        <div class="text-sm md:text-base text-gray-200 mt-1">
+          Years Active
+        </div>
+      </div>
+
+      <!-- Stat 3 -->
+      <div>
+        <div class="snum text-3xl md:text-4xl font-bold
+                    bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-200
+                    bg-clip-text text-transparent"
+             data-target="200">
+          0+
+        </div>
+        <div class="text-sm md:text-base text-gray-200 mt-1">
+          Products Exported
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 container mx-auto px-6 reveal">
+<h3 class="text-4xl font-bold text-primary dark:text-accent text-center mb-8">About Us</h3>
+<p class="text-center max-w-3xl mx-auto text-lg">
+Sanha Enterprises specializes in exporting premium Indian products to GCC markets,
+ensuring quality, reliability, and strong global partnerships.
+</p>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-20 bg-gray-100 dark:bg-gray-800">
+<div class="container mx-auto px-6">
+<h3 class="text-4xl font-bold text-primary dark:text-accent text-center mb-12 reveal">Our Services</h3>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-white dark:bg-gray-700 shadow-xl rounded-2xl p-6 text-center hover:scale-105 transition reveal">Hospitality Uniforms</div>
+<div class="bg-white dark:bg-gray-700 shadow-xl rounded-2xl p-6 text-center hover:scale-105 transition reveal">Healthcare Uniforms</div>
+<div class="bg-white dark:bg-gray-700 shadow-xl rounded-2xl p-6 text-center hover:scale-105 transition reveal">Corporate Wear</div>
+<div class="bg-white dark:bg-gray-700 shadow-xl rounded-2xl p-6 text-center hover:scale-105 transition reveal">Import/Export Logistics</div>
+
+</div>
+</div>
+</section>
+
+<!-- PARALLAX -->
+<section class="parallax h-96 flex items-center justify-center text-white text-4xl font-bold"
+style="background-image: url('ws.jpg'); height:300px;">
+Expanding Beyond Borders
+</section>
+
+
+<section id="products">
+    <h3 class="text-4xl font-bold text-primary dark:text-accent text-center mb-12 reveal"> Our Products</h3>
+
+    <div class="swiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1581091012184-5c2b5b1c03e4')">
+                <div class="card-content">
+                    <h3 class="card-title" style="text-align: center;">Plumbing</h3>
+                    <p class="card-description">Top-notch plumbing tools and supplies.</p>
+                </div>
+            </div>
+
+            <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1581092919535-7146ff43d1c3')">
+                <div class="card-content">
+                    <h3 class="card-title">Electrical</h3>
+                    <p class="card-description">High-quality electrical tools.</p>
+                
+                </div>
+            </div>
+
+            <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1582582494700-8f24d4f1f6c0')">
+                <div class="card-content">
+                    <h3 class="card-title">Construction</h3>
+                    <p class="card-description">Premium construction materials.</p>
+                </div>
+            </div>
+
+            <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85')">
+                <div class="card-content">
+                    <h3 class="card-title">Paint Materials</h3>
+                    <p class="card-description">Vibrant, long-lasting paints.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+
+       
+    </div>
+</section>
+
+
+
+<section id="coming-soon">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Expanding Our Range</span>
+      <h2 class="section-title">Coming Soon</h2>
+      <p class="section-sub">
+        We're growing our catalog. Here's a preview of what's arriving soon.
+      </p>
+    </div>
+
+    <div class="coming-soon-grid">
+
+      <!-- Card 1 -->
+      <div class="coming-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc" alt="Agricultural Goods">
+        </div>
+        <div class="card-content">
+          <span class="cs-badge">Coming Soon</span>
+          <h4 style="text-align: center;">Agricultural Goods</h4>
+          <p>Premium spices, grains, and Indian agricultural exports meeting international quality standards.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="coming-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7" alt="Furniture">
+        </div>
+        <div class="card-content">
+          <span class="cs-badge">Coming Soon</span>
+          <h4>Furniture & Decor</h4>
+          <p>Handcrafted Indian furniture and home decor items for the GCC residential market.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="coming-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1581091870627-3d6f1c8b3c70" alt="Industrial Tools">
+        </div>
+        <div class="card-content">
+          <span class="cs-badge">Coming Soon</span>
+          <h4>Industrial Tools</h4>
+          <p>Professional-grade tools and machinery sourced from leading Indian manufacturers.</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="coming-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348" alt="Personal Care">
+        </div>
+        <div class="card-content">
+          <span class="cs-badge">Coming Soon</span>
+          <h4>Personal Care</h4>
+          <p>Natural and Ayurvedic personal care products from trusted Indian brands.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- PRODUCTS 
+<section id="products" class="py-20 container mx-auto px-6">
+<h3 class="text-4xl font-bold text-primary dark:text-accent text-center mb-12 reveal">Our Products</h3>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white dark:bg-gray-700 p-6 shadow-xl rounded-xl reveal">Premium Uniform Fabric</div>
+<div class="bg-white dark:bg-gray-700 p-6 shadow-xl rounded-xl reveal">Industrial Safety Wear</div>
+<div class="bg-white dark:bg-gray-700 p-6 shadow-xl rounded-xl reveal">Corporate Apparel Collection</div>
+</div>
+</section> -->
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="py-20 bg-gray-100 dark:bg-gray-800">
+<div class="container mx-auto px-6 text-center">
+<h3 class="text-4xl font-bold text-primary dark:text-accent mb-12 reveal">Testimonials</h3>
+<div class="max-w-3xl mx-auto space-y-8">
+<div class="bg-white dark:bg-gray-700 p-6 shadow-xl rounded-xl reveal">
+"Sanha Enterprises delivered exceptional quality and timely exports."
+</div>
+<div class="bg-white dark:bg-gray-700 p-6 shadow-xl rounded-xl reveal">
+"Reliable partner for expanding our GCC distribution network."
+</div>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<!-- <section id="contact" class="py-20 bg-primary text-white">
+<div class="container mx-auto px-6 text-center">
+<h3 class="text-4xl font-bold mb-10 reveal">Contact Us</h3>
+
+</div>
+</section>
+
+<footer class="bg-primary text-gray-300 py-6 text-center">
+© 2026 Sanha Enterprises. All Rights Reserved.
+</footer>
+
+<a href="https://wa.me/919999999999" target="_blank" class="whatsapp-float">💬</a>
+
+ -->
+<!-- CONTACT SECTION -->
+
+<section id="contact" class="py-10 bg-primary text-white">
+  <div class="container mx-auto px-6 text-center">
+
+    <h3 class="text-4xl font-bold mb-10 reveal">
+      Contact Us
+    </h3>
+
+    <!-- Contact Details -->
+    <div class="space-y-1 text-lg ">
+
+      <p>
+        📧 
+        <a href="mailto:info@sanhaenterprises.com" 
+           class="hover:text-accent transition">
+           info@sanhaenterprises.com
+        </a>
+      </p>
+
+      <p>
+        📞 
+        <a href="tel:+919999999999" 
+           class="hover:text-accent transition">
+           +91 99999 99999
+        </a>
+      </p>
+
+      <p>
+        📍 Sanha Enterprises,  
+        Kerala, India – 676XXX
+      </p>
+
+    </div>
+
+ 
+
+  </div>
+</section>
+<!-- PREMIUM FOOTER -->
+<footer class="bg-primary text-gray-300 py-6">
+
+  <div class="container mx-auto px-6">
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-gray-700 pt-6 text-center">
+
+      <!-- Copyright -->
+      <p class="text-gray-400 text-sm mb-6">
+        © 2026 Sanha Enterprises. All Rights Reserved.
+      </p>
+
+      <!-- Social Icons Centered -->
+      <div class="flex justify-center space-x-6">
+
+        <a href="#"
+           class="social-icon">in</a>
+
+        <a href="#"
+           class="social-icon">tw</a>
+
+        <a href="#"
+           class="social-icon">ig</a>
+
+        <a href="#"
+           class="social-icon">fb</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- WhatsApp Float -->
+<!-- <a href="https://wa.me/919999999999" 
+   target="_blank" 
+   class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 
+          text-white text-2xl w-14 h-14 flex items-center justify-center 
+          rounded-full shadow-lg transition z-50">
+  💬
+</a> -->
+<a href="https://wa.me/919999999999"
+   target="_blank"
+   class="whatsapp-glow fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 
+          text-white text-2xl w-14 h-14 flex items-center justify-center 
+          rounded-full transition z-50">
+  💬
+</a>
+
+<!-- Swiper JS -->
+
+
+
+
+
+
+
+
+
+<script>
+
+/* =========================
+   LOTTIE PRELOADER
+========================= */
+lottie.loadAnimation({
+  container: document.getElementById('lottieLoader'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'erth.json'
+});
+
+/* =========================
+   SMOOTH PRELOADER (Single Load Event)
+========================= */
+window.addEventListener("load", () => {
+  const preloader = document.getElementById("preloader");
+
+  setTimeout(() => {
+    preloader.style.opacity = "0";
+    preloader.style.transition = "opacity 0.4s ease";
+
+    setTimeout(() => {
+      preloader.style.display = "none";
+    }, 400);
+
+  }, 1800);
+});
+
+
+
+
+
+
+
+const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+
+      entry.target.querySelectorAll(".snum[data-target]").forEach((el) => {
+        const target = +el.dataset.target;
+        const increment = target / 200;
+        let count = 0;
+
+        const updateCounter = () => {
+          count += increment;
+          if (count >= target) {
+            el.textContent = target + "+";
+          } else {
+            el.textContent = Math.floor(count) + "+";
+            requestAnimationFrame(updateCounter);
+          }
+        };
+
+        updateCounter();
+      });
+
+      counterObserver.unobserve(entry.target);
+    });
+  }, { threshold: 0.9 });
+
+  const statsSection = document.querySelector(".hstats");
+  if (statsSection) {
+    counterObserver.observe(statsSection);
+  }
+
+
+
+
+/* =========================
+   SWIPER (Optimized)
+========================= */
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  spaceBetween: 20,
+  speed: 800, // smoother transition
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    0: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 }
+  }
+});
+
+
+/* =========================
+   HAMBURGER MENU
+========================= */
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+if (menuBtn && mobileMenu) {
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    menuBtn.classList.toggle("active");
+  });
+}
+
+
+/* =========================
+   DARK MODE TOGGLE
+========================= */
+const html = document.documentElement;
+const darkToggle = document.getElementById("darkToggle");
+const darkToggleMobile = document.getElementById("darkToggleMobile");
+
+function toggleDarkMode() {
+  html.classList.toggle("dark");
+
+  const icon = html.classList.contains("dark") ? "☀" : "🌙";
+
+  if (darkToggle) darkToggle.textContent = icon;
+  if (darkToggleMobile) darkToggleMobile.textContent = icon;
+}
+
+if (darkToggle) darkToggle.addEventListener("click", toggleDarkMode);
+if (darkToggleMobile) darkToggleMobile.addEventListener("click", toggleDarkMode);
+
+
+/* =========================
+   NAVBAR SCROLL EFFECT (Optimized)
+========================= */
+const navbar = document.getElementById("navbar");
+
+if (navbar) {
+  window.addEventListener("scroll", () => {
+    navbar.classList.toggle("navbar-scroll", window.scrollY > 50);
+  });
+}
+
+
+/* =========================
+   REVEAL ANIMATION (No Lag)
+   Using IntersectionObserver
+========================= */
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("active");
+      observer.unobserve(entry.target); // animate once only
+    }
+  });
+}, {
+  threshold: 0.15
+});
+
+document.querySelectorAll(".reveal").forEach(el => {
+  observer.observe(el);
+});
+
+</script>
+
+</body>
+</html>

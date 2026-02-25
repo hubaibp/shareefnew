@@ -1,0 +1,153 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #f8fafc;
+}
+
+/* SECTION */
+#coming-soon {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #f8fafc, #eef2ff);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-tag {
+  display: inline-block;
+  background: #6366f1;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+.section-sub {
+  max-width: 650px;
+  margin: 12px auto 0;
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* GRID */
+.coming-soon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.coming-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.coming-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(99,102,241,0.25);
+}
+
+/* IMAGE */
+.card-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.coming-card:hover img {
+  transform: scale(1.08);
+}
+
+/* CONTENT */
+.card-content {
+  padding: 25px;
+  text-align: center;
+  position: relative;
+}
+
+.cs-badge {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  background: #f97316;
+  color: #fff;
+  padding: 5px 14px;
+  font-size: 11px;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.coming-card h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 20px 0 10px;
+}
+
+.coming-card p {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* DARK MODE */
+.dark body {
+  background: #0f172a;
+}
+
+.dark #coming-soon {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+.dark .section-title {
+  color: #f1f5f9;
+}
+
+.dark .section-sub {
+  color: #94a3b8;
+}
+
+.dark .coming-card {
+  background: #1e293b;
+}
+
+.dark .coming-card h4 {
+  color: #f1f5f9;
+}
+
+.dark .coming-card p {
+  color: #cbd5e1;
+}
