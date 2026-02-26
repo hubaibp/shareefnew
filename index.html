@@ -37,22 +37,23 @@ tailwind.config = {
 <!-- PRELOADER -->
 <div id="preloader" class="fixed inset-0 bg-white flex flex-col justify-center items-center z-50">
   <div id="lottieLoader" style="width:350px;height:350px;"></div>
+  <img src="assets/lo.png" alt="Sanha Logo" style="width: 150px; height: 150px; margin-top: -10px;">
   <!-- <p class="text-white mt-6 tracking-widest">Connecting Global Markets...</p> -->
 </div>
 
 <!-- NAVBAR -->
-<header id="navbar" class="fixed w-full z-40 bg-primary text-white transition-all duration-300">
+<header id="navbar" class="fixed w-full z-40 bg-gray-50 dark:bg-gray-900 text-white transition-all duration-300">
   <div class="container mx-auto flex justify-between items-center px-6 py-5">
-
-    <h1 class="text-2xl font-bold text-accent">Sanha Enterprises</h1>
+<img src="assets/lo.png" alt="" srcset="" style="width: 80px; height: 80px;margin-left: 1px;">
+    <!-- <h1 class="text-2xl font-bold text-accent">Sanha Enterprises</h1> -->
 
     <!-- Desktop Menu -->
     <nav class="hidden md:flex space-x-8 font-medium items-center">
-      <a href="#about" class="hover:text-accent transition">About</a>
-      <a href="#services" class="hover:text-accent transition">Services</a>
-      <a href="#products" class="hover:text-accent transition">Products</a>
-      <a href="#testimonials" class="hover:text-accent transition">Testimonials</a>
-      <a href="#contact" class="hover:text-accent transition">Contact</a>
+      <a href="#about" class="hover:text-accent transition" style="color: black;">About</a>
+      <a href="#services" class="hover:text-accent transition" style="color: black;">Services</a>
+      <a href="#products" class="hover:text-accent transition" style="color: black;">Products</a>
+      <!-- <a href="#testimonials" class="hover:text-accent transition" style="color: black;">Testimonials</a> -->
+      <a href="#contact" class="hover:text-accent transition" style="color: black;">Contact</a>
 
       <!-- Dark Toggle Desktop -->
       <!-- <button id="darkToggle" class="ml-6 text-xl">🌙</button> -->
@@ -74,12 +75,12 @@ tailwind.config = {
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobileMenu" class="hidden md:hidden bg-primary px-6 pb-6 space-y-4">
-    <a href="#about" class="block">About</a>
-    <a href="#services" class="block">Services</a>
-    <a href="#products" class="block">Products</a>
-    <a href="#testimonials" class="block">Testimonials</a>
-    <a href="#contact" class="block">Contact</a>
+  <div id="mobileMenu" class="hidden md:hidden bg-white px-6 pb-6 space-y-4">
+    <a href="#about" class="block"  style="color: black;">About</a>
+    <a href="#services" class="block"  style="color: black;">Services</a>
+    <a href="#products" class="block"  style="color: black;">Products</a>
+    <!-- <a href="#testimonials" class="block"  style="color: black;">Testimonials</a> -->
+    <a href="#contact" class="block"  style="color: black;">Contact</a>
   </div>
 </header>
 
@@ -239,7 +240,7 @@ style="background-image: url('ghjk.png');">
 
   <div class="trade-bg">
 
-    <img src="sss.jpeg" alt="Cargo Ship">
+    <img src="assets/globalimpexp.jpeg" alt="Cargo Ship">
 
     <!-- Overlay -->
     <div class="trade-overlay"></div>
@@ -255,7 +256,7 @@ style="background-image: url('ghjk.png');">
 
       <div class="trade-right">
         <p>
-          Seamless import-export operations powered by logistics innovation,
+          Seamless import export operations powered by logistics innovation,
           global partnerships, and supply chain excellence.
         </p>
       </div>
@@ -343,14 +344,16 @@ style="background-image: url('ghjk.png');">
 style="background-image: url('ws.jpg'); height:300px;">
 Expanding Beyond Borders
 </section>
-<section class="video-section">
+<!-- <section class="video-section">
 
   <video autoplay loop muted playsinline>
-    <source src="WhatsApp Video 2026-02-26 at 00.02.46.mp4" type="video/mp4">
+    <source src="assets/prods/avilmilkvid.mp4" type="video/mp4">
+    <source src="assets/prods/coffeevid.mp4" type="video/mp4">
+    <source src="assets/prods/upmavid.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
-</section>
+</section> -->
 
 
 <section id="products">
@@ -358,15 +361,26 @@ Expanding Beyond Borders
 
     <div class="swiper">
         <div class="swiper-wrapper">
+  <div class="swiper-slide">
+    <img src="assets/prods/avilmilk.jpeg" alt="Avil Milk">
+</div>
 
-            <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1581091012184-5c2b5b1c03e4')">
+<div class="swiper-slide">
+    <img src="assets/prods/upma.jpeg" alt="Rice Upma">
+</div>
+
+<div class="swiper-slide">
+    <img src="assets/prods/coffee.jpeg" alt="Coffee">
+</div>
+
+            <!-- <div class="swiper-slide" ><img src="assets/prods/avilmilk.jpeg" alt="Avil Milk">
                 <div class="card-content">
                     <h3 class="card-title" style="text-align: center;">Instant Avil Milk</h3>
                     <p class="card-description">Freshness in Seconds,Flavour in every bite</p>
                 </div>
             </div>
 
-            <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1581092919535-7146ff43d1c3')">
+            <div class="swiper-slide" style="background-image:url(assets/prods/upma.jpeg); ">
                 <div class="card-content">
                     <h3 class="card-title">Instant rice upma</h3>
                     <p class="card-description">Ultra Convenient simply add hot water and it is ready to eat</p>
@@ -374,19 +388,16 @@ Expanding Beyond Borders
                 </div>
             </div>
 
-            <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1582582494700-8f24d4f1f6c0')">
-                <div class="card-content">
-                    <h3 class="card-title">Construction</h3>
-                    <p class="card-description">Premium construction materials.</p>
-                </div>
-            </div>
+           
 
-            <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85')">
+            <div class="swiper-slide" style="background-image:url(assets/prods/coffee.jpeg); ">
                 <div class="card-content">
-                    <h3 class="card-title">Chuck Coffee</h3>
-                    <p class="card-description">Premium coffee blends for the discerning palate.</p>
+                    <h3 class="card-title">Chuck Coffee</h3> 
+                     <p class="card-description">Premium coffee blends for the discerning palate.</p>
                 </div>
-            </div>
+            </div> -->
+
+           
 
         </div>
 
@@ -414,7 +425,7 @@ Expanding Beyond Borders
       <!-- Card 1 -->
       <div class="coming-card">
         <div class="card-img">
-          <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc" alt="Agricultural Goods">
+          <img src="#" alt="Agricultural Goods">
         </div>
         <div class="card-content">
           <span class="cs-badge">Coming Soon</span>
@@ -426,7 +437,7 @@ Expanding Beyond Borders
       <!-- Card 2 -->
       <div class="coming-card">
         <div class="card-img">
-          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7" alt="Furniture">
+          <img src="#" alt="Furniture">
         </div>
         <div class="card-content">
           <span class="cs-badge">Coming Soon</span>
@@ -438,7 +449,7 @@ Expanding Beyond Borders
       <!-- Card 3 -->
       <div class="coming-card">
         <div class="card-img">
-          <img src="https://images.unsplash.com/photo-1581091870627-3d6f1c8b3c70" alt="Industrial Tools">
+          <img src="#" alt="Industrial Tools">
         </div>
         <div class="card-content">
           <span class="cs-badge">Coming Soon</span>
@@ -450,7 +461,7 @@ Expanding Beyond Borders
       <!-- Card 4 -->
       <div class="coming-card">
         <div class="card-img">
-          <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348" alt="Personal Care">
+          <img src="#" alt="Personal Care">
         </div>
         <div class="card-content">
           <span class="cs-badge">Coming Soon</span>
@@ -522,23 +533,23 @@ Expanding Beyond Borders
 
       <p>
         📧 
-        <a href="mailto:info@sanhaenterprises.com" 
+        <a href="mailto:sanhaenterprises@gmail.com" 
            class="hover:text-accent transition">
-           info@sanhaenterprises.com
+           sanhaenterprises@gmail.com
         </a>
       </p>
 
       <p>
         📞 
-        <a href="tel:+919999999999" 
+        <a href="tel:+919995040181" 
            class="hover:text-accent transition">
-           +91 99999 99999
+           +91 99950 40181
         </a>
       </p>
 
       <p>
-        📍 Sanha Enterprises,  
-        Kerala, India – 676XXX
+        📍 Building No. 23-241/E Parakkad
+        Mongam(P.O), Malappuram, Kerala 673642
       </p>
 
     </div>
@@ -563,17 +574,17 @@ Expanding Beyond Borders
       <!-- Social Icons Centered -->
       <div class="flex justify-center space-x-6">
 
-        <a href="#"
-           class="social-icon">in</a>
+        <!-- <a href="#"
+           class="social-icon">in</a> -->
 
-        <a href="#"
-           class="social-icon">tw</a>
+        <!-- <a href="#"
+           class="social-icon">tw</a> -->
 
-        <a href="#"
+        <!-- <a href="#"
            class="social-icon">ig</a>
 
         <a href="#"
-           class="social-icon">fb</a>
+           class="social-icon">fb</a> -->
 
       </div>
 
@@ -591,7 +602,7 @@ Expanding Beyond Borders
           rounded-full shadow-lg transition z-50">
   💬
 </a> -->
-<a href="https://wa.me/919999999999"
+<a href="https://wa.me/966502316284"
    target="_blank"
    class="whatsapp-glow fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 
           text-white text-2xl w-14 h-14 flex items-center justify-center 
