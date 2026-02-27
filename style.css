@@ -94,7 +94,7 @@ h2{
 
 .swiper-slide {
   position: relative;
-  height: 400px;          /* Control height only */
+  height: 300px;          /* Control height only */
   border-radius: 20px;
   width: 250px;           /* Full width */
   overflow: hidden;
