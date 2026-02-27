@@ -37,32 +37,30 @@ tailwind.config = {
 <!-- PRELOADER -->
 <div id="preloader" class="fixed inset-0 bg-white flex flex-col justify-center items-center z-50">
   <div id="lottieLoader" style="width:350px;height:350px;"></div>
+  <img src="assets/lo.png" alt="Sanha Logo" style="width: 150px; height: 150px; margin-top: -10px;">
   <!-- <p class="text-white mt-6 tracking-widest">Connecting Global Markets...</p> -->
 </div>
 
 <!-- NAVBAR -->
-<header id="navbar" class="fixed w-full z-40 bg-primary text-white transition-all duration-300">
+<header id="navbar" class="fixed w-full z-40 bg-gray-50 dark:bg-gray-900 text-white transition-all duration-300">
   <div class="container mx-auto flex justify-between items-center px-6 py-5">
-
-    <h1 class="text-2xl font-bold text-accent">Sanha Enterprises</h1>
+<img src="assets/lo.png" alt="" srcset="" style="width: 80px; height: 80px;margin-left: 1px;">
+    <!-- <h1 class="text-2xl font-bold text-accent">Sanha Enterprises</h1> -->
 
     <!-- Desktop Menu -->
     <nav class="hidden md:flex space-x-8 font-medium items-center">
-      <a href="#about" class="hover:text-accent transition">About</a>
-      <a href="#services" class="hover:text-accent transition">Services</a>
-      <a href="#products" class="hover:text-accent transition">Products</a>
-      <a href="#testimonials" class="hover:text-accent transition">Testimonials</a>
-      <a href="#contact" class="hover:text-accent transition">Contact</a>
+      <a href="#about" class="hover:text-accent transition" style="color: black;">About</a>
+      <a href="#services" class="hover:text-accent transition" style="color: black;">Services</a>
+      <a href="#products" class="hover:text-accent transition" style="color: black;">Products</a>
+      <!-- <a href="#testimonials" class="hover:text-accent transition" style="color: black;">Testimonials</a> -->
+      <a href="#contact" class="hover:text-accent transition" style="color: black;">Contact</a>
 
-      <!-- Dark Toggle Desktop -->
-      <!-- <button id="darkToggle" class="ml-6 text-xl">🌙</button> -->
+      
     </nav>
 
     <!-- Right Controls -->
     <div class="flex items-center space-x-4 md:hidden">
 
-      <!-- Dark Toggle Mobile -->
-      <!-- <button id="darkToggleMobile" class="text-xl">🌙</button> -->
 
       <!-- Hamburger -->
       <div id="menuBtn" class="cursor-pointer hamburger">
@@ -74,37 +72,29 @@ tailwind.config = {
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobileMenu" class="hidden md:hidden bg-primary px-6 pb-6 space-y-4">
-    <a href="#about" class="block">About</a>
-    <a href="#services" class="block">Services</a>
-    <a href="#products" class="block">Products</a>
-    <a href="#testimonials" class="block">Testimonials</a>
-    <a href="#contact" class="block">Contact</a>
+  <div id="mobileMenu" class="hidden md:hidden bg-white px-6 pb-6 space-y-4">
+    <a href="#about" class="block"  style="color: black;">About</a>
+    <a href="#services" class="block"  style="color: black;">Services</a>
+    <a href="#products" class="block"  style="color: black;">Products</a>
+    <!-- <a href="#testimonials" class="block"  style="color: black;">Testimonials</a> -->
+    <a href="#contact" class="block"  style="color: black;">Contact</a>
   </div>
 </header>
 
-<!-- HERO 
-<section class="h-screen flex items-center justify-center bg-cover bg-center text-white relative"
-style="background-image: url('ghjk.png');">
-<div class="absolute inset-0 bg-primary bg-opacity-45"></div>
-<div class="relative text-center px-6 reveal">
-<h2 class="text-4xl md:text-6xl font-extrabold mb-6">Driving Global Market Expansion</h2>
-<p class="text-lg md:text-xl mb-8">Innovative Connections: Indian Products to Global Consumers</p>
-<a href="#services" class="bg-accent text-primary font-semibold px-8 py-3 rounded-full hover:bg-white transition">Explore Our Services</a>
-</div>
-</section>  -->
+<!-- HERO -->
+
 <section class="h-screen flex items-center justify-center bg-cover bg-center text-white relative"
 style="background-image: url('ghjk.png');">
 
   <!-- Overlay -->
-  <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+  <!-- <div class="absolute inset-0 bg-black bg-opacity-50"></div> -->
 
   <!-- Hero Content -->
   <div class="relative text-center px-6 reveal z-10 ">
-    <h2 class="text-4xl md:text-6xl font-extrabold mb-6 ">
-      Driving Global Market Expansion
+<h2 class="text-4xl md:text-6xl font-extrabold mb-6"
+    style="color: rgb(229, 255, 0); text-shadow: 2px 8px 15px rgb(0, 0, 0);">      Leading Global Market Expansion
     </h2>
-    <p class="text-lg md:text-xl mb-8">
+    <p class="text-lg md:text-xl mb-8 font-extrabold"  style="color: rgb(229, 255, 0); text-shadow: 5px 8px 15px rgb(0, 0, 0);">
       Innovative Connections: Indian Products to Global Consumers
     </p>
     <a href="#services"
@@ -119,142 +109,169 @@ style="background-image: url('ghjk.png');">
                 grid grid-cols-3 gap-6 text-center ">
 
       <!-- Stat 1 -->
-      <div>
-        <div class="snum text-3xl md:text-4xl font-bold
-                    bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-200
-                    bg-clip-text text-transparent"
-             data-target="50">
-          0+
-        </div>
-        <div class="text-sm md:text-base text-gray-200 mt-1">
-         Global Partners
-        </div>
-      </div>
 
-      <!-- Stat 2 -->
-      <div>
-        <div class="snum text-3xl md:text-4xl font-bold
-                    bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-200
-                    bg-clip-text text-transparent"
-             data-target="12">
-          0+
-        </div>
-        <div class="text-sm md:text-base text-gray-200 mt-1">
-          Years Active
-        </div>
-      </div>
 
-      <!-- Stat 3 -->
-      <div>
-        <div class="snum text-3xl md:text-4xl font-bold
-                    bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-200
-                    bg-clip-text text-transparent"
-             data-target="200">
-          0+
-        </div>
-        <div class="text-sm md:text-base text-gray-200 mt-1">
-          Products Exported
-        </div>
-      </div>
+
+
+
+<!-- Stat 1 -->
+<div>
+  <div class="snum text-3xl md:text-4xl font-extrabold
+              bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-200
+              bg-clip-text text-transparent
+              [filter:drop-shadow(0px_4px_10px_rgba(0,0,0,0.9))_drop-shadow(0px_2px_4px_rgba(0,0,0,0.8))]"
+       data-target="50">
+    0<span class="font-black [filter:drop-shadow(0px_4px_10px_rgba(0,0,0,0.9))_drop-shadow(0px_2px_4px_rgba(0,0,0,0.8))]" >+</span>
+  </div>
+  <div class="text-sm md:text-base text-gray-200 mt-1">
+   <p style="color: black;"> <b>Global Partners</b></p> 
+  </div>
+</div>
+
+<!-- Stat 2 -->
+<div>
+  <div class="snum text-3xl md:text-4xl font-extrabold
+              bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-200
+              bg-clip-text text-transparent
+              [filter:drop-shadow(0px_4px_10px_rgba(0,0,0,0.9))_drop-shadow(0px_2px_4px_rgba(0,0,0,0.8))]"
+       data-target="12">
+    0<span class="font-black [filter:drop-shadow(0px_4px_10px_rgba(0,0,0,0.9))_drop-shadow(0px_2px_4px_rgba(0,0,0,0.8))]" >+</span>
+  </div>
+  <div class="text-sm md:text-base text-gray-200 mt-1">
+    <p style="color: black;"><b>Years Active</b></p>
+  </div>
+</div>
+
+<!-- Stat 3 -->
+<div>
+  <div class="snum text-3xl md:text-4xl font-extrabold
+              bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-200
+              bg-clip-text text-transparent
+              [filter:drop-shadow(0px_4px_10px_rgba(0,0,0,0.9))_drop-shadow(0px_2px_4px_rgba(0,0,0,0.8))]"
+       data-target="200">
+    0<span class="font-black [filter:drop-shadow(0px_4px_10px_rgba(0,0,0,0.9))_drop-shadow(0px_2px_4px_rgba(0,0,0,0.8))]" >+</span>
+  </div>
+  <div class="text-sm md:text-base text-gray-200 mt-1">
+    <p style="color: black;"><b>Products Exported</b></p>
+</div>
+
 
     </div>
   </div>
 
 </section>
-
-<!-- ABOUT 
-<section id="about" class="py-20 container mx-auto px-6 reveal">
-<h3 class="stitle font-bold text-primary dark:text-accent text-center mb-8">About Us</h3>
-<p class="text-center max-w-3xl mx-auto text-lg">
-Sanha Enterprises specializes in exporting premium Indian products to Global markets,
-ensuring quality, reliability, and strong global partnerships.
-</p>
-</section>  -->
-
-<!-- Google Font -->
-<!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet"> -->
 
 <section id="about">
 
   <div class="about-container">
 
-    <div class="eyl">Who We Are</div>
+    <!-- TOP CENTER CONTENT -->
+    <div class="about-top">
+      <div class="eyl">Who We Are</div>
 
-    <h2 class="stitle">
-      Your Bridge to <br><em>Global Markets</em>
-    </h2>
+      <h2 class="stitle">
+        Your Bridge to <br><em>Global Markets</em>
+      </h2>
 
-    <p class="ap">
-      <strong>Sanha Enterprises</strong> specializes in exporting premium
-      Indian products to Global markets, ensuring quality, reliability, and
-      long-term global partnerships.We go beyond traditional export services  acting as your strategic
-      growth partner by maintaining international standards, competitive
-      pricing, and seamless supply chain operations.
-    </p>
-
-    <!-- <p class="ap">
-      We go beyond traditional export services — acting as your strategic
-      growth partner by maintaining international standards, competitive
-      pricing, and seamless supply chain operations.
-    </p> -->
-
-    <!-- FEATURES -->
-    <div class="afeats">
-
-      <div class="af">
-<div class="afi">
-  <img src="assets/box.png" alt="Strategic Distribution" style="width:40px; height:auto;">
-</div>
-        <div >
-          <div class="aft" > Strategic Distribution</div>
-          <div class="afs">50+ Global partners</div>
-        </div>
-      </div>
-
-      <div class="af">
-          <img src="assets/store.png" alt="Strategic Distribution" style="width:40px; height:auto;">
-
-        <div>
-          <div class="aft">Diverse Market Access</div>
-          <div class="afs">Certified & verified products</div>
-        </div>
-      </div>
-
-      <div class="af">
-          <img src="assets/logistic.png" alt="Strategic Distribution" style="width:40px; height:auto;">
-
-        <div>
-          <div class="aft">Logistics Innovation</div>
-          <div class="afs">Reliable logistics chain</div>
-        </div>
-      </div>
-
-      <div class="af">
-          <img src="assets/excellence.png" alt="Strategic Distribution" style="width:40px; height:auto;">
-
-        <div>
-          <div class="aft">Assured Excellence</div>
-          <div class="afs">Dedicated client service</div>
-        </div>
-      </div>
-
+      <p class="ap">
+        <strong>Sanha Enterprises</strong> specializes in exporting premium
+        Indian products to Global markets, ensuring quality, reliability,
+        and long-term global partnerships. We go beyond traditional export
+        services — acting as your strategic growth partner by maintaining
+        international standards, competitive pricing, and seamless supply chain operations.
+      </p>
     </div>
 
-    <!-- MARKETS -->
-    <div class="mkts">
-      <span class="mp">🇮🇳 India</span>
-      <span class="mp">🇦🇪 UAE</span>
-      <span class="mp">🇸🇦 Saudi Arabia</span>
-      <span class="mp">🇶🇦 Qatar</span>
-      <span class="mp">🇰🇼 Kuwait</span>
-      <span class="mp">🇧🇭 Bahrain</span>
+    <!-- IMAGE + FEATURES ROW -->
+    <div class="about-row">
+
+  <!-- LEFT IMAGE -->
+  <div class="about-image">
+    <img src="full.jpeg" alt="Import Export Business">
+  </div>
+
+  <!-- RIGHT FEATURES -->
+  <div class="afeatures">
+
+    <div class="feature-item">
+      <img src="assets/box.png" alt="">
+      <div>
+        <h4>Strategic Distribution</h4>
+        <p>50+ Global partners</p>
+      </div>
+    </div>
+
+    <div class="feature-item">
+      <img src="assets/store.png" alt="">
+      <div>
+        <h4>Diverse Market Access</h4>
+        <p>Certified & verified products</p>
+      </div>
+    </div>
+
+    <div class="feature-item">
+      <img src="assets/logistic.png" alt="">
+      <div>
+        <h4>Logistics Innovation</h4>
+        <p>Reliable logistics chain</p>
+      </div>
+    </div>
+
+    <div class="feature-item">
+      <img src="assets/excellence.png" alt="">
+      <div>
+        <h4>Assured Excellence</h4>
+        <p>Dedicated client service</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- MARKETS CENTER -->
+<div class="mkts">
+  <span class="mp">🇮🇳 India</span>
+  <span class="mp">🇦🇪 UAE</span>
+  <span class="mp">🇸🇦 Saudi Arabia</span>
+  <span class="mp">🇶🇦 Qatar</span>
+  <span class="mp">🇰🇼 Kuwait</span>
+  <span class="mp">🇧🇭 Bahrain</span>
+</div>
+
+</section>
+
+<!-- IMPORT EXPORT VISUAL SECTION -->
+<section class="trade-visual">
+
+  <div class="trade-bg">
+
+    <img src="assets/globalimpexp.jpeg" alt="Cargo Ship">
+
+    <!-- Overlay -->
+    <div class="trade-overlay"></div>
+
+    <!-- Content -->
+    <div class="trade-content">
+
+      <div class="trade-left">
+        <h2>
+          Connecting India to <br><em>Global Markets</em>
+        </h2>
+      </div>
+
+      <div class="trade-right">
+        <p>
+          Seamless import export operations powered by logistics innovation,
+          global partnerships, and supply chain excellence.
+        </p>
+      </div>
+
     </div>
 
   </div>
 
 </section>
-
-
 
 <!-- SERVICES
 <section id="services" class="py-20 bg-gray-100 dark:bg-gray-800">
@@ -284,7 +301,7 @@ ensuring quality, reliability, and strong global partnerships.
   <div class="sgrid">
 
     <!-- Card 1 -->
-    <div class="sc rv" style="transition-delay: 0s">
+    <!-- <div class="sc rv" style="transition-delay: 0s">
       <div class="scn">01</div>
       
       <div class="sci">
@@ -294,24 +311,134 @@ ensuring quality, reliability, and strong global partnerships.
       <p class="scdesc">
         Introducing innovative, high quality Indian food products to Global markets with a focus on authenticity and taste.
       </p>
-      <!-- <div class="sclink">Explore →</div> -->
+       <div class="sclink">Explore →</div> 
+    </div> -->
+
+
+
+
+<div class="relative w-full max-w-sm rounded-xl overflow-hidden shadow-2xl group">
+
+  <!-- Background Image -->
+  <img src="assets/global-logistics-transportation-network.jpg" 
+       alt="Global Food Experts"
+       class="w-full h-80 object-cover">
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <!-- Content Over Image -->
+  <div class="absolute inset-0 flex flex-col justify-end p-6 text-white">
+
+    <!-- <div class="text-lg font-bold mb-1"
+         style="text-shadow: 2px 3px 6px rgba(0,0,0,0.9);">
+      01
+    </div> -->
+    
+
+    <div class="text-xl font-extrabold mb-2"
+         style="text-shadow: 2px 3px 8px rgba(0,0,0,1);">
+      Global Food Experts
     </div>
 
-    <!-- Card 2 -->
+    <p class="text-sm leading-relaxed"
+       style="text-shadow: 1px 2px 6px rgba(0,0,0,0.9);">
+      Introducing innovative, high quality Indian food products to Global markets with a focus on authenticity and taste.
+    </p>
+
+  </div>
+
+</div>
+
+
+
+<div class="relative w-full max-w-sm rounded-xl overflow-hidden shadow-2xl group">
+
+  <!-- Background Image -->
+  <img src="assets/happy-group-businesspeople.jpg" 
+       alt="Corporate Uniforms"
+       class="w-full h-80 object-cover">
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <!-- Content Over Image -->
+  <div class="absolute inset-0 flex flex-col justify-end p-6 text-white">
+
+    <!-- <div class="text-lg font-bold mb-1"
+         style="text-shadow: 2px 3px 6px rgba(0,0,0,0.9);">
+      01
+    </div> -->
+    
+
+    <div class="text-xl font-extrabold mb-2"
+         style="text-shadow: 2px 3px 8px rgba(0,0,0,1);">
+      Corporate Uniforms
+    </div>
+
+    <p class="text-sm leading-relaxed"
+       style="text-shadow: 1px 2px 6px rgba(0,0,0,0.9);">
+      Expertise in design,quality and bulk manufacturing of corporate uniforms for businesses across industries.
+    </p>
+
+  </div>
+
+</div>
+
+
+
+
+
+<div class="relative w-full max-w-sm rounded-xl overflow-hidden shadow-2xl group">
+
+  <!-- Background Image -->
+  <img src="assets/full-shot-travel-concept-with-landmarks.jpg" 
+       alt="Global Food Experts"
+       class="w-full h-80 object-cover">
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <!-- Content Over Image -->
+  <div class="absolute inset-0 flex flex-col justify-end p-6 text-white">
+
+    <!-- <div class="text-lg font-bold mb-1"
+         style="text-shadow: 2px 3px 6px rgba(0,0,0,0.9);">
+      01
+    </div> -->
+    
+
+    <div class="text-xl font-extrabold mb-2"
+         style="text-shadow: 2px 3px 8px rgba(0,0,0,1);">
+      Premium Travel Tours
+    </div>
+
+    <p class="text-sm leading-relaxed"
+       style="text-shadow: 1px 2px 6px rgba(0,0,0,0.9);">
+      Seamless Travel experiences for business and leisure.
+    </p>
+
+  </div>
+
+</div>
+
+
+
+    <!-- Card 2
     <div class="sc rv" style="transition-delay: 0.1s">
       <div class="scn">02</div>
           <div class="sci">
-  <img src="assets/fashion.png" alt="Strategic Distribution" style="width:70px; height:auto;align-items: center;">
+  <img src="assets/corporate-uniforms.png" alt="Strategic Distribution" style="width:70px; height:auto;align-items: center;">
 </div>
       <div class="scname">Corporate Uniforms</div>
       <p class="scdesc">
-        Expertise in design,quality and bulk manufacturing of corporate uniforms for businesses across industries.
+          Expertise in design,quality and bulk manufacturing of corporate uniforms for businesses across industries.
       </p>
-      <!-- <div class="sclink">Explore →</div> -->
-    </div>
+       <div class="sclink">Explore →</div>
+    </div> -->
 
     <!-- Card 3 -->
-    <div class="sc rv" style="transition-delay: 0.2s">
+    <!-- <div class="sc rv" style="transition-delay: 0.2s">
       <div class="scn">03</div>
           <div class="sci">
   <img src="assets/travel-agency.png" alt="Strategic Distribution" style="width:70px; height:auto;align-items: center;">
@@ -320,8 +447,8 @@ ensuring quality, reliability, and strong global partnerships.
       <p class="scdesc">
        Seamless Travel experiences for business and leisure.
       </p>
-      <!-- <div class="sclink">Explore →</div> -->
-    </div>
+       <div class="sclink">Explore →</div> 
+    </div> -->
 
     
 
@@ -333,6 +460,16 @@ ensuring quality, reliability, and strong global partnerships.
 style="background-image: url('ws.jpg'); height:300px;">
 Expanding Beyond Borders
 </section>
+<!-- <section class="video-section">
+
+  <video autoplay loop muted playsinline>
+    <source src="assets/prods/avilmilkvid.mp4" type="video/mp4">
+    <source src="assets/prods/coffeevid.mp4" type="video/mp4">
+    <source src="assets/prods/upmavid.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+</section> -->
 
 
 <section id="products">
@@ -340,15 +477,26 @@ Expanding Beyond Borders
 
     <div class="swiper">
         <div class="swiper-wrapper">
+  <div class="swiper-slide">
+    <img src="assets/prods/avilmilk.jpeg" alt="Avil Milk">
+</div>
 
-            <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1581091012184-5c2b5b1c03e4')">
+<div class="swiper-slide">
+    <img src="assets/prods/upma.jpeg" alt="Rice Upma">
+</div>
+
+<div class="swiper-slide">
+    <img src="assets/prods/coffee.jpeg" alt="Coffee">
+</div>
+
+            <!-- <div class="swiper-slide" ><img src="assets/prods/avilmilk.jpeg" alt="Avil Milk">
                 <div class="card-content">
                     <h3 class="card-title" style="text-align: center;">Instant Avil Milk</h3>
                     <p class="card-description">Freshness in Seconds,Flavour in every bite</p>
                 </div>
             </div>
 
-            <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1581092919535-7146ff43d1c3')">
+            <div class="swiper-slide" style="background-image:url(assets/prods/upma.jpeg); ">
                 <div class="card-content">
                     <h3 class="card-title">Instant rice upma</h3>
                     <p class="card-description">Ultra Convenient simply add hot water and it is ready to eat</p>
@@ -356,19 +504,16 @@ Expanding Beyond Borders
                 </div>
             </div>
 
-            <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1582582494700-8f24d4f1f6c0')">
-                <div class="card-content">
-                    <h3 class="card-title">Construction</h3>
-                    <p class="card-description">Premium construction materials.</p>
-                </div>
-            </div>
+           
 
-            <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85')">
+            <div class="swiper-slide" style="background-image:url(assets/prods/coffee.jpeg); ">
                 <div class="card-content">
-                    <h3 class="card-title">Chuck Coffee</h3>
-                    <p class="card-description">Premium coffee blends for the discerning palate.</p>
+                    <h3 class="card-title">Chuck Coffee</h3> 
+                     <p class="card-description">Premium coffee blends for the discerning palate.</p>
                 </div>
-            </div>
+            </div> -->
+
+           
 
         </div>
 
@@ -396,7 +541,7 @@ Expanding Beyond Borders
       <!-- Card 1 -->
       <div class="coming-card">
         <div class="card-img">
-          <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc" alt="Agricultural Goods">
+          <img src="#" alt="Agricultural Goods">
         </div>
         <div class="card-content">
           <span class="cs-badge">Coming Soon</span>
@@ -408,7 +553,7 @@ Expanding Beyond Borders
       <!-- Card 2 -->
       <div class="coming-card">
         <div class="card-img">
-          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7" alt="Furniture">
+          <img src="#" alt="Furniture">
         </div>
         <div class="card-content">
           <span class="cs-badge">Coming Soon</span>
@@ -420,7 +565,7 @@ Expanding Beyond Borders
       <!-- Card 3 -->
       <div class="coming-card">
         <div class="card-img">
-          <img src="https://images.unsplash.com/photo-1581091870627-3d6f1c8b3c70" alt="Industrial Tools">
+          <img src="#" alt="Industrial Tools">
         </div>
         <div class="card-content">
           <span class="cs-badge">Coming Soon</span>
@@ -432,7 +577,7 @@ Expanding Beyond Borders
       <!-- Card 4 -->
       <div class="coming-card">
         <div class="card-img">
-          <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348" alt="Personal Care">
+          <img src="#" alt="Personal Care">
         </div>
         <div class="card-content">
           <span class="cs-badge">Coming Soon</span>
@@ -504,23 +649,23 @@ Expanding Beyond Borders
 
       <p>
         📧 
-        <a href="mailto:info@sanhaenterprises.com" 
+        <a href="mailto:sanhaenterprises@gmail.com" 
            class="hover:text-accent transition">
-           info@sanhaenterprises.com
+           sanhaenterprises@gmail.com
         </a>
       </p>
 
       <p>
         📞 
-        <a href="tel:+919999999999" 
+        <a href="tel:+919995040181" 
            class="hover:text-accent transition">
-           +91 99999 99999
+           +91 99950 40181
         </a>
       </p>
 
       <p>
-        📍 Sanha Enterprises,  
-        Kerala, India – 676XXX
+        📍 Building No. 23-241/E Parakkad
+        Mongam(P.O), Malappuram, Kerala 673642
       </p>
 
     </div>
@@ -545,17 +690,17 @@ Expanding Beyond Borders
       <!-- Social Icons Centered -->
       <div class="flex justify-center space-x-6">
 
-        <a href="#"
-           class="social-icon">in</a>
+        <!-- <a href="#"
+           class="social-icon">in</a> -->
 
-        <a href="#"
-           class="social-icon">tw</a>
+        <!-- <a href="#"
+           class="social-icon">tw</a> -->
 
-        <a href="#"
+        <!-- <a href="#"
            class="social-icon">ig</a>
 
         <a href="#"
-           class="social-icon">fb</a>
+           class="social-icon">fb</a> -->
 
       </div>
 
@@ -573,7 +718,7 @@ Expanding Beyond Borders
           rounded-full shadow-lg transition z-50">
   💬
 </a> -->
-<a href="https://wa.me/919999999999"
+<a href="https://wa.me/966502316284"
    target="_blank"
    class="whatsapp-glow fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 
           text-white text-2xl w-14 h-14 flex items-center justify-center 
