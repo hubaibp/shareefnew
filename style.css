@@ -2,6 +2,8 @@
 body { font-family: 'Inter', sans-serif; }
 html { scroll-behavior: smooth; }
 
+
+
 /* PRELOADER */
 #preloader {
   position: fixed;

@@ -633,20 +633,16 @@ lottie.loadAnimation({
 /* =========================
    SMOOTH PRELOADER (Single Load Event)
 ========================= */
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
   const preloader = document.getElementById("preloader");
 
+  preloader.style.opacity = "0";
+  preloader.style.transition = "opacity 3s ease";
+
   setTimeout(() => {
-    preloader.style.opacity = "0";
-    preloader.style.transition = "opacity 0.4s ease";
-
-    setTimeout(() => {
-      preloader.style.display = "none";
-    }, 400);
-
-  }, 1100);
+    preloader.style.display = "none";
+  }, 3000);
 });
-
 
 
 
