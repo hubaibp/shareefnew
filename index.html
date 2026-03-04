@@ -633,17 +633,20 @@ lottie.loadAnimation({
 /* =========================
    SMOOTH PRELOADER (Single Load Event)
 ========================= */
-window.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const preloader = document.getElementById("preloader");
 
-  preloader.style.opacity = "0";
-  preloader.style.transition = "opacity 3s ease";
-
+  // Always show for 1 second
   setTimeout(() => {
-    preloader.style.display = "none";
-  }, 3000);
-});
+    preloader.style.opacity = "0";
+    preloader.style.transition = "opacity 0.4s ease";
 
+    setTimeout(() => {
+      preloader.style.display = "none";
+    }, 400);
+
+  }, 1000); // 1 second visible
+});
 
 
 
@@ -719,25 +722,6 @@ if (menuBtn && mobileMenu) {
   });
 }
 
-
-/* =========================
-   DARK MODE TOGGLE
-========================= */
-const html = document.documentElement;
-const darkToggle = document.getElementById("darkToggle");
-const darkToggleMobile = document.getElementById("darkToggleMobile");
-
-function toggleDarkMode() {
-  html.classList.toggle("dark");
-
-  const icon = html.classList.contains("dark") ? "☀" : "🌙";
-
-  if (darkToggle) darkToggle.textContent = icon;
-  if (darkToggleMobile) darkToggleMobile.textContent = icon;
-}
-
-if (darkToggle) darkToggle.addEventListener("click", toggleDarkMode);
-if (darkToggleMobile) darkToggleMobile.addEventListener("click", toggleDarkMode);
 
 
 /* =========================
